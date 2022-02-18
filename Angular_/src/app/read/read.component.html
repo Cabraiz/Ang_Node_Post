@@ -1,0 +1,71 @@
+<section>
+    <div class="container">
+
+        <div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+            <strong>{{successmsg}}</strong> 
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="mt-3 mb-3 row align-items-center">
+            <div class="col">
+            <div class="row align-items-center">
+                <div class="col-auto ">
+                    Mostrar
+                </div>
+                <div class="col-auto gx-0">
+                        <select name="dttable_length" aria-controls="dttable" class="form-select">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select> 
+                </div>
+                <div class="col-auto">
+                    elementos
+                </div>
+                </div>
+        </div>
+        <div class="col">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    Buscar:
+                </div>
+                <div class="col">
+                    <input type="search" class="form-control form-control-m" placeholder="" aria-controls="dttable">   
+                </div>
+            </div>
+        </div>
+        </div>
+        <table id="table" class="table table-striped table-bordered table-m" cellspacing="0"
+        width="100%" aria-describedby="dt_info">
+        <thead>
+        <tr>
+            <th scope="col"><button id="sortnumber" type="button" class="btn btn-light fs-6 fw-bold">#</button></th>
+            <th scope="col"><button id="sortcpf" type="button" class="btn btn-light fs-6 fw-bold">CPF</button></th>
+            <th scope="col"><button id="sortnome" type="button" class="btn btn-light fs-6 fw-bold">Nome</button></th>
+            <th scope="col"><button id="sortsobrenome" type="button" class="btn btn-light fs-6 fw-bold">Sobrenome</button></th>
+            <th scope="col"><button id="sorttelefone" type="button" class="btn btn-light fs-6 fw-bold">Telefone</button></th>
+            <th scope="col"><button id="sorttpsangue" type="button" class="btn btn-light fs-7 fw-bold">Tipo Sanguineo</button></th>
+            <th scope="col"><button id="sortdtnasc" type="button" class="btn btn-light fs-7 fw-bold">Data De Nascimento</button></th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor = 'let us of readData; let indexOfelement=index;'>
+            <th scope="row">{{indexOfelement + 1}}</th>
+            <td class="col-md-2">{{us.cd_pessoa}}</td>
+            <td>{{us.nm_pessoa}}</td>
+            <td>{{us.nm_sobrenome}}</td>
+            <td class="col-md-2">{{us.nr_telefone}}</td>
+            <td>{{us.tp_sangue}}</td>
+            <td>{{us.dt_nascimento.slice(8, -14) + '/' + us.dt_nascimento.slice(5, -17) + '/' + us.dt_nascimento.slice(0, -20)}}</td>
+            <td class="col-md-3">
+                <button class="btn btn-danger" (click)="deleteID(us.cd_pessoa)" > Remover </button>
+                &nbsp;
+                <a  [routerLink]="['/create', us.cd_pessoa]" class="btn btn-success mt-1"> Editar </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</section>

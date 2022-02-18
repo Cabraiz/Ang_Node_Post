@@ -1,0 +1,9 @@
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+label{
+    margin-bottom: 1%;
+    font-weight: bold;
+}

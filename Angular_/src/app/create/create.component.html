@@ -1,0 +1,55 @@
+<section>
+<div class="container mt-3">  
+    <div *ngIf="errormsg" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{errormsg}}</strong> 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>{{successmsg}}</strong> 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+    <form [formGroup]="userForm">
+        <div class="col-lg-6 mt-2">
+            <label> CPF: </label>
+            <input type="text" class="form-control" id="cpf" formControlName="cd_pessoa" placeholder="123.456.789-00">
+        </div>
+
+        <div class="col-lg-6 mt-2">
+            <label> Nome: </label>
+            <input type="text" class="form-control" formControlName="nm_pessoa" placeholder="Nome">
+        </div>
+
+        <div class="col-lg-6 mt-2">
+            <label> Sobrenome: </label>
+            <input type="text" class="form-control" formControlName="nm_sobrenome" placeholder="Sobrenome">
+        </div>
+
+        <div class="col-lg-6 mt-2">
+            <label> Numero De Telefone: </label>
+            <input type="text" class="form-control" id="phone-mask" formControlName="nr_telefone" for="typeNumber" placeholder="(00) 0.0000-0000">
+        </div>
+
+        <div class="col-lg-6 mt-2">
+            <label> Tipo Sanguineo: </label>
+            <input type="text" class="form-control " formControlName="tp_sangue" placeholder="Tipo Sanguineo">
+        </div>
+
+        <div class="col-lg-6 mt-2">
+            <label> Data de Nascimento: </label>
+            <input type="datetime-local" class="form-control" formControlName="dt_nascimento" placeholder="00/00/0000">    
+        </div>
+
+        <div class="col-lg-4 mt-2" *ngIf="!getparamid" (click)="userSubmit()">
+            <button class="btn btn-primary btn-lg">Criar</button>
+        </div>
+
+        <div class="col-lg-4 mt-2" *ngIf="getparamid" (click)="userUpdate()">
+            <button class="btn btn-primary btn-lg">Editar</button>
+        </div>
+
+    </form>
+</div>
+</section>
