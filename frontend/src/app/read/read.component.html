@@ -37,10 +37,10 @@
         </div>
         </div>
         <table id="table_read" class="table table-striped table-bordered">
-        <thead class="thead-dark">
+        <thead>
         <tr>
-            <th style="width: 5%" scope="col"><button id="sortnumber" type="button" class="btn fs-6 fw-bold">#</button></th>
-            <th style="width: 15%" scope="col"><button id="sortcpf" type="button" onclick="sortTable(0, 'svg01')" class="btn fs-6 fw-bold p-3" style="display: inline-block;">
+            <th scope="col"><button id="sortnumber" type="button" class="btn fw-bold">#</button></th>
+            <th scope="col"><button id="sortcpf" type="button" onclick="sortTable(0, 'svg01')" class="btn fw-bold p-3">
                 CPF
                 <svg xmlns="http://www.w3.org/2000/svg" width="0%" fill="currentColor" class="bi bi-sort-up-alt" viewBox="0 0 16 16">
                     <path d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707V13.5zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z"/>
@@ -48,11 +48,11 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="0%" fill="currentColor" class="bi bi-sort-up" viewBox="0 0 16 16">
                     <path d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16%" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15%" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
                     <path fill="#8080808C" fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
                   </svg></button></th>
                   
-            <th style="width: 14%" scope="col"><button id="sortnome" type="button" onclick="sortTable(1)" class="btn fs-6 fw-bold p-3" style="display: inline-block;">
+            <th style="width: 12%" scope="col"><button id="sortnome" type="button" onclick="sortTable(1)" class="btn fw-bold p-3">
                 Nome <svg xmlns="http://www.w3.org/2000/svg" width="0%" fill="currentColor" class="bi bi-sort-up-alt" viewBox="0 0 16 16">
                     <path d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707V13.5zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z"/>
                   </svg>
@@ -62,17 +62,17 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="20%" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
                     <path fill="#8080808C" fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
                   </svg></button></th>
-            <th style="width: 20%" scope="col"><button id="sortsobrenome" type="button" onclick="sortTable(2)" class="btn fs-6 fw-bold p-3">
+            <th style="width: 17%" scope="col"><button id="sortsobrenome" type="button" onclick="sortTable(2)" class="btn fw-bold p-3">
                 Sobrenome <svg xmlns="http://www.w3.org/2000/svg" width="0%" fill="currentColor" class="bi bi-sort-up-alt" viewBox="0 0 16 16">
                     <path d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707V13.5zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z"/>
                   </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="0%" fill="currentColor" class="bi bi-sort-up" viewBox="0 0 16 16">
                     <path d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14%" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13%" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
                     <path fill="#8080808C" fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
                   </svg></button></th>
-            <th style="width: 20%" scope="col"><button id="sorttelefone" type="button" onclick="sortTable(3)" class="btn fs-6 fw-bold p-3">
+            <th scope="col"><button id="sorttelefone" type="button" onclick="sortTable(3)" class="btn fw-bold p-3">
                 Telefone <svg xmlns="http://www.w3.org/2000/svg" width="0%" fill="currentColor" class="bi bi-sort-up-alt" viewBox="0 0 16 16">
                     <path d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707V13.5zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z"/>
                   </svg>
@@ -82,9 +82,27 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="14%" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
                     <path fill="#8080808C" fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
                   </svg></button></th>
-            <th scope="col"><button id="sorttpsangue" type="button" onclick="sortTable(4)" class="btn fs-7 fw-bold p-2">Tipo Sanguineo</button></th>
-            <th scope="col"><button id="sortdtnasc" type="button" onclick="sortTable(5)" class="btn fs-7 fw-bold p-2">Data De Nascimento</button></th>
-            <th scope="col"></th>
+            <th style="width: 9%" scope="col"><button id="sorttpsangue" type="button" onclick="sortTable(4)" class="btn fw-bold p-3">
+                T.S. <svg xmlns="http://www.w3.org/2000/svg" width="0%" fill="currentColor" class="bi bi-sort-up-alt" viewBox="0 0 16 16">
+                    <path d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707V13.5zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z"/>
+                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="0%" fill="currentColor" class="bi bi-sort-up" viewBox="0 0 16 16">
+                    <path d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40%" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                    <path fill="#8080808C" fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg></button></th>
+            <th style="width: 14%" scope="col"><button id="sortdtnasc" type="button" onclick="sortTable(5)" class="btn fw-bold p-3">
+                Dt. Nasc. <svg xmlns="http://www.w3.org/2000/svg" width="0%" fill="currentColor" class="bi bi-sort-up-alt" viewBox="0 0 16 16">
+                    <path d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707V13.5zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z"/>
+                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="0%" fill="currentColor" class="bi bi-sort-up" viewBox="0 0 16 16">
+                    <path d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20%" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                    <path fill="#8080808C" fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg></button></th>
+            <th style="width: 20%" scope="col"></th>
         </tr>
         </thead>
         <tbody>
@@ -97,9 +115,8 @@
             <td>{{us.tp_sangue}}</td>
             <td>{{us.dt_nascimento.slice(8, -14) + '/' + us.dt_nascimento.slice(5, -17) + '/' + us.dt_nascimento.slice(0, -20)}}</td>
             <td class="col-md-3">
-                <button class="btn btn-danger" (click)="deleteID(us.cd_pessoa)" > Remover </button>
-                &nbsp;
-                <a  [routerLink]="['/create', us.cd_pessoa]" class="btn btn-success mt-1"> Editar </a>
+                <button id="btnRemove" style="width: 70%" class="btn btn-danger" (click)="deleteID(us.cd_pessoa)" > Remover </button>
+                <a [routerLink]="['/create', us.cd_pessoa]" id="btnEditar" class="btn btn-success mt-1" style="width: 70%;"> Editar </a>
             </td>
         </tr>
         </tbody>

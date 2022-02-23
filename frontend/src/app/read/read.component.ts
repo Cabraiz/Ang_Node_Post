@@ -2,6 +2,7 @@ import { Renderer2, Component, OnInit, Inject } from '@angular/core';
 import { ApiserviceService } from '../apiservice.service';
 import { DOCUMENT } from '@angular/common';
 
+
 @Component({
   selector: 'app-read',
   templateUrl: './read.component.html',

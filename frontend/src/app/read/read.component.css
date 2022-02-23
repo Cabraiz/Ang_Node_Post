@@ -1,10 +1,39 @@
+#sortnumber{
+    font-size: calc(0.001rem + 1.3vw);
+}
+
 #sortcpf{
-    height:100%;
-    width:100%;
+    font-size: calc(0.001rem + 1.3vw);
 }
+
+#sortnome{
+    font-size: calc(0.001rem + 1.3vw);
+}
+
+#sortsobrenome{
+    font-size: calc(0.001rem + 1.3vw);
+}
+
 #sorttelefone{
-    height:100%;
-    width:100%;
+    font-size: calc(0.001rem + 1.3vw);
 }
 
+#sortcpf{
+    font-size: calc(0.001rem + 1.3vw);
+}
 
+#sorttpsangue{
+    font-size: calc(0.001rem + 0.9vw);
+}
+
+#sortdtnasc{
+    font-size: calc(0.001rem + 1.2vw);
+}
+
+#btnRemove{
+    font-size: calc(0.001rem + 1.3vw);
+}
+
+#btnEditar{
+    font-size: calc(0.001rem + 1.3vw);
+}
