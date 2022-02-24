@@ -58,6 +58,12 @@ export class ReadComponent implements OnInit {
           switching = true;
         }
       }
+    }
+    function popUpShow() {
+      document.getElementById("label_sangue").innerHTML = "Tipo Sanguineo";
+    }
+    function popUpOut() {
+      document.getElementById("label_sangue").innerHTML = "T.S.";
     }`
 
     this._renderer2.appendChild(this._document.body, script);

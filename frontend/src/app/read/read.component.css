@@ -1,39 +1,75 @@
+::ng-deep :root {
+    --fonttoptd: Georgia, 'Times New Roman', Times, serif;
+    --white: #ffffff;
+  }
+
 #sortnumber{
-    font-size: calc(0.001rem + 1.3vw);
+    font-size: calc(0.001rem + 1.2vw);
+    font-family: var(--fonttoptd);
 }
 
 #sortcpf{
-    font-size: calc(0.001rem + 1.3vw);
+    font-size: calc(0.001rem + 1.2vw);
+    font-family: var(--fonttoptd);
+    width: 100%;
 }
 
 #sortnome{
     font-size: calc(0.001rem + 1.3vw);
+    font-family:var(--fonttoptd);
 }
 
 #sortsobrenome{
     font-size: calc(0.001rem + 1.3vw);
+    font-family: var(--fonttoptd);
 }
 
 #sorttelefone{
     font-size: calc(0.001rem + 1.3vw);
+    font-family: var(--fonttoptd);
 }
 
 #sortcpf{
     font-size: calc(0.001rem + 1.3vw);
+    font-family: var(--fonttoptd);
 }
 
 #sorttpsangue{
-    font-size: calc(0.001rem + 0.9vw);
+    font-size: calc(0.001rem + 1.3vw);
+    font-family: var(--fonttoptd);
 }
 
 #sortdtnasc{
-    font-size: calc(0.001rem + 1.2vw);
+    font-size: calc(0.001rem + 1.3vw);
+    font-family: var(--fonttoptd);
 }
 
 #btnRemove{
-    font-size: calc(0.001rem + 1.3vw);
+    width: 80%;
+    font-size: calc(0.001rem + 1.2vw);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #btnEditar{
-    font-size: calc(0.001rem + 1.3vw);
+    width: 80%;
+    font-size: calc(0.001rem + 1.2vw);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#svg_info{
+    margin-bottom: 20px;
+    width: calc(0.001rem + 1vw);
+}
+
+svg{
+    margin-bottom: 2px;
+    width: calc(0.001rem + 1.3vw);
+}
+
+th, td {
+    font-family: "Arvo";
+}
+
+#nopaddingtupla{
+    padding: 0px;
 }
