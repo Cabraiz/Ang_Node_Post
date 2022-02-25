@@ -10,7 +10,7 @@ export class ApiserviceService {
   constructor(private _http:HttpClient) { }
 
   //conexao backend
-  apiUrl = 'http://localhost:3000/user';
+  apiUrl = 'http://192.168.0.8:3000/user';
 
   //get todos os dados
   getAllData():Observable<any>

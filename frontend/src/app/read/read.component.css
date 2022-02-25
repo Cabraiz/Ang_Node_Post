@@ -1,75 +1,148 @@
 ::ng-deep :root {
     --fonttoptd: Georgia, 'Times New Roman', Times, serif;
-    --white: #ffffff;
-  }
+    --marginval: 5%;
+    --paddingval: 0px;
+    --widthval: 90%;
+    --heightval: 25px;
+}
 
 #sortnumber{
     font-size: calc(0.001rem + 1.2vw);
     font-family: var(--fonttoptd);
+    width: 1px;
+}
+
+#sortnumberth{
+    padding: 0px;
+    margin: 0px;
 }
 
 #sortcpf{
+    height: var(--heightval);
     font-size: calc(0.001rem + 1.2vw);
     font-family: var(--fonttoptd);
-    width: 100%;
+    width: var(--widthval);
+    margin-left: var(--marginval);
+    padding: var(--paddingval);
 }
 
 #sortnome{
-    font-size: calc(0.001rem + 1.3vw);
+    height: var(--heightval);
+    font-size: calc(0.001rem + 1.2vw);
     font-family:var(--fonttoptd);
+    width: var(--widthval);
+    margin-left: var(--marginval);
+    padding: var(--paddingval);
 }
 
 #sortsobrenome{
-    font-size: calc(0.001rem + 1.3vw);
+    height: var(--heightval);
+    font-size: calc(0.001rem + 1.2vw);
     font-family: var(--fonttoptd);
+    width: var(--widthval);
+    margin-left: var(--marginval);
+    padding: var(--paddingval);
 }
 
 #sorttelefone{
-    font-size: calc(0.001rem + 1.3vw);
+    height: var(--heightval);
+    font-size: calc(0.001rem + 1.2vw);
     font-family: var(--fonttoptd);
+    width: var(--widthval);
+    margin-left: var(--marginval);
+    padding: var(--paddingval);
 }
 
 #sortcpf{
-    font-size: calc(0.001rem + 1.3vw);
+    height: var(--heightval);
+    font-size: calc(0.001rem + 1.2vw);
     font-family: var(--fonttoptd);
+    width: var(--widthval);
+    margin-left: var(--marginval);
+    padding: var(--paddingval);
 }
 
 #sorttpsangue{
-    font-size: calc(0.001rem + 1.3vw);
+    height: var(--heightval);
+    font-size: calc(0.001rem + 1.2vw);
     font-family: var(--fonttoptd);
+    width: var(--widthval);
+    margin-left: var(--marginval);
+    padding: var(--paddingval);
 }
 
 #sortdtnasc{
-    font-size: calc(0.001rem + 1.3vw);
+    height: var(--heightval);
+    font-size: calc(0.001rem + 1.2vw);
     font-family: var(--fonttoptd);
+    width: var(--widthval);
+    margin-left: var(--marginval);
+    padding: var(--paddingval);
 }
 
 #btnRemove{
-    width: 80%;
-    font-size: calc(0.001rem + 1.2vw);
+    height: calc(0.7rem + 2vw);
+    width: calc(0.5rem + 6vw);
+    font-size: calc(0.01rem + 1.2vw);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: calc(0.01rem + 0.6vw);
+    padding: 2%;
 }
 
 #btnEditar{
-    width: 80%;
-    font-size: calc(0.001rem + 1.2vw);
+    height: calc(0.7rem + 2vw);
+    width: calc(0.5rem + 6vw);
+    font-size: calc(0.01rem + 1.2vw);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#nopaddingtupla{
+    padding: calc(0.01rem + 0.5vw);
+    margin: 0px;
+}
+
 #svg_info{
-    margin-bottom: 20px;
-    width: calc(0.001rem + 1vw);
+    margin-bottom: calc(1px + 0.8vw);
+    width: calc(1px + 0.8vw);
 }
 
 svg{
-    margin-bottom: 2px;
-    width: calc(0.001rem + 1.3vw);
+    margin-bottom: 1px;
+    width: calc(0.001rem + 1.2vw);
 }
 
 th, td {
     font-family: "Arvo";
 }
 
-#nopaddingtupla{
+
+
+#sortnometh{
     padding: 0px;
+    margin: 0px;
+}
+
+#sortsobrenometh{
+    padding: 0px;
+    margin: 0px;
+}
+
+#sorttelefoneth{
+    padding: 0px;
+    margin: 0px;
+}
+
+#sortcpfth{
+    padding: 0px;
+    margin: 0px;
+}
+
+#sorttpsangueth{
+    padding: 0px;
+    margin: 0px;
+}
+
+#sortdtnascth{
+    padding: 0px;
+    margin: 0px;
 }

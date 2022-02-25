@@ -10,7 +10,7 @@ const app = express();
 app.use(cors()); 
 app.use(bodyparser.json());
 
-app.listen(3000,()=>{
+app.listen(3000, '0.0.0.0',()=>{
   console.log('Servidor Rodando');
 })
 
