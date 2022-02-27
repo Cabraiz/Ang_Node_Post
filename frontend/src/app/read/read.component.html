@@ -1,4 +1,4 @@
-<section>
+<section style="padding: 0px;">
     <div class="container">
 
         <div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show mt-3" role="alert">
@@ -39,9 +39,9 @@
         <table id="table_read" class="table table-striped table-bordered">
         <thead>
         <tr>
-            <th id="sortnumberth" scope="col"><button id="sortnumber" type="button" class="btn fw-bold">#</button></th>
-            <th id="sortcpfth" scope="col">
-                <button id="sortcpf" type="button" onclick="sortTable(0, 'svg01')" class="btn fw-bold">
+            <th class="zeropadding" scope="col"><button type="button" class="btn fw-bold sortresp">#</button></th>
+            <th class="zeropadding" scope="col">
+                <button  type="button" onclick="sortTable(0, 'svg01')" class="btn fw-bold sortresp">
                   <div class="d-flex justify-content-between">
                     CPF&nbsp;
                       <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-down-up " viewBox="0 0 16 16">
@@ -50,8 +50,8 @@
                   </div>
                 </button>
             </th>
-            <th id="sortnometh" scope="col">
-              <button id="sortnome" type="button" onclick="sortTable(1)" class="btn fw-bold">
+            <th class="zeropadding" scope="col">
+              <button type="button" onclick="sortTable(1)" class="btn fw-bold sortresp">
                 <div class="d-flex justify-content-between">
                 Nome&nbsp;
                   <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
@@ -60,8 +60,8 @@
                 </div>
               </button>
             </th>
-            <th id="sortsobrenometh" scope="col">
-              <button id="sortsobrenome" type="button" onclick="sortTable(2)" class="btn fw-bold">
+            <th class="zeropadding" scope="col">
+              <button type="button" onclick="sortTable(2)" class="btn fw-bold sortresp">
                 <div class="d-flex justify-content-between">
                   Sobrenome&nbsp;
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
@@ -70,8 +70,8 @@
                 </div>
               </button>
             </th>
-            <th id="sorttelefoneth" scope="col">
-              <button id="sorttelefone" type="button" onclick="sortTable(3)" class="btn fw-bold">
+            <th class="zeropadding" scope="col">
+              <button type="button" onclick="sortTable(3)" class="btn fw-bold sortresp">
                 <div class="d-flex justify-content-between">
                   Telefone&nbsp;
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
@@ -80,8 +80,8 @@
                 </div>
               </button>
             </th>
-            <th id="sorttpsangueth" scope="col">
-              <button onmouseleave="popUpOut()" id="sorttpsangue" style="white-space:nowrap;" type="button" onclick="sortTable(4)" class="btn fw-bold ">
+            <th class="zeropadding" scope="col">
+              <button onmouseleave="popUpOut()"  style="white-space:nowrap;" type="button" onclick="sortTable(4)" class="btn fw-bold sortresp">
                 <label id="label_sangue" >T.S.</label> 
                 <label><svg id="svg_info" onmouseover="popUpShow()" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
                   <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -92,8 +92,8 @@
                   </svg>
                 </button>
               </th>
-            <th id="sortdtnascth" scope="col">
-              <button id="sortdtnasc" style="white-space:nowrap;" type="button" onclick="sortTable(5)" class="btn fw-bold">
+            <th class="zeropadding" scope="col">
+              <button style="white-space:nowrap;" type="button" onclick="sortTable(5)" class="btn fw-bold sortresp">
                 <div class="d-flex justify-content-between">
                   Dt. Nasc.&nbsp; 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">

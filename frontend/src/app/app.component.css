@@ -1,0 +1,25 @@
+#leftheader{
+    font-size: calc(0.01rem + 1.2vw);
+}
+
+#rightheader{
+    font-size: calc(0.01rem + 1.2vw);
+}
+
+#createbuttonid{
+    font-size: calc(0.01rem + 1.2vw);
+    height: calc(0.01rem + 3vw);
+    width: calc(0.001rem + 9vw);
+    padding: 0px;
+}
+
+#readbuttonid{
+    font-size: calc(0.01rem + 1.2vw);
+    height: calc(0.01rem + 3vw);
+    width: calc(0.001rem + 9vw);
+    padding: 0px;
+}
+
+#containertudo{
+    padding: 0px;
+}
